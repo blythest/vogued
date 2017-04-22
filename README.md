@@ -1,2 +1,2 @@
 # vogued
-madlib-y vogue caption generator 
+madlib-y vogue caption generator

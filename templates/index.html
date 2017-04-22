@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% block container %}
+
+<style type= 'text/css'>
+body {
+  font-family:"Didot";
+  background-image: url("/static/img/edited_fancybag_new.png");
+  background-repeat: no-repeat;
+  background-size:700px auto;
+  background-position: top 80px right -10px;
+  overflow:hidden; 
+}
+
+h1 {
+  top:5%;
+  bottom:5%;
+}
+
+.fixed { 
+  left:50;
+  margin-top:20px;
+  position: fixed;
+
+}
+
+form {
+  top:100;
+}
+
+form label {
+  text-transform:uppercase;
+  font-style:italic;
+  font-size: 1em;
+  font-weight: bold;
+  text-align:left;
+  display: block;
+  padding: 8px;
+  margin-bottom:10px;
+  background-color:#66F4FF;
+  width:335px;
+}
+ 
+form textarea#textInput {
+  width: 350px;
+  height: 200px;
+  -webkit-appearance: none;
+  margin-bottom: 10px;
+  border:1px solid #000000; 
+  border-radius:0;
+  padding: .5rem 1rem;
+  font-size: 1.1em;
+}
+
+form input#source {
+  display: block;
+  width:350px;
+  font-family:"Didot";
+  border-color:#000000;
+  border:1px solid #000000; 
+  text-transform:uppercase;
+  font-style:italic;
+  -webkit-appearance: none;
+  margin-bottom: 20px;
+  border-radius:0;
+  padding: 10px; 
+  font-weight:bold; 
+  text-align: left; 
+  background-color: #ffffff;
+}
+
+form input#submit {
+  display: block;
+  font-family:"Didot";
+  font-style:bold;
+  border-color:#000000;
+  color: #000000;
+  text-transform:uppercase;
+  font-style:italic;
+  -webkit-appearance: none;
+  margin-bottom: 10px;
+  border-radius:0;
+  padding: 10px; 
+  font-weight:bold; 
+  text-align: center;
+  background-color: transparent;
+}
+ 
+form input#submit:hover{
+  cursor: pointer;
+  border:1px solid #000000; 
+  background-color: transparent;
+}
+
+/* Message flashing */
+.flash {
+  font-family:"Helvetica";
+  color:#252525;
+  margin-left:-55px;
+  background-color: #F89ABB;
+  padding: 10px;
+  width: 400px;
+  margin-top: 5px;
+}
+
+.DidotLT-Roman { 
+  font-family: DidotLT-Roman;
+  font-weight: normal;
+  font-style: normal;
+}
+.DidotLT-Italic { 
+  font-family: DidotLT-Italic;
+  font-weight: normal;
+  font-style: normal;
+}
+.DidotLT-Bold { 
+  font-family: DidotLT-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+</style>
+
+{% for message in form.source.errors %}
+  <div class="flash">{{ message }}</div>
+{% endfor %}
+
+{% for message in form.textInput.errors %}
+  <div class="flash">{{ message }}</div>
+{% endfor %}
+
+<h1 class='fixed DidotLT-Bold'>VOGUE caption MadLibs!</h1>
+
+<form class='fixed' action="{{ url_for('index') }}" method=post>
+    {{ form.hidden_tag() }}
+ 
+    {{ form.source.label }}
+    {{ form.source }}
+    {{ form.textInput.label }}
+    {{ form.textInput }}
+ 
+    {{ form.submit }}
+  </form>
+
+
+{% endblock %}

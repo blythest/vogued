@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block container %}
+
+<style type= 'text/css'>
+body {
+	background-size:100vw auto;
+}
+
+.navbar-fixed-top {
+	max-height:1020px;
+}
+
+.line {
+	font-family:Helvetica;
+	font-size:14px;
+	line-height:18px;
+	color:#ffffff;
+	margin-top:10px;
+	left:10;
+	width:250px;
+	padding:10px;
+	position:fixed;
+	
+}
+
+.header {
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.buttons {
+	margin-top:40px;
+}
+
+.back {
+	display: block;
+	font-family:"Didot";
+	font-style:bold;
+	color: #ffffff;
+	text-transform:uppercase;
+	font-style:italic;
+	-webkit-appearance: none;
+	margin-bottom: 10px;
+	border-radius:0;
+	border:1px solid #ffffff;
+	padding: 10px; 
+	font-weight:bold; 
+	text-align: center;
+	width:80px;
+	background-color: transparent;
+}
+
+a {
+	font-family: "Didot LT Roman";
+	font-style:italic;
+	font-size:14px;
+	text-transform:uppercase;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#000000;
+}
+
+</style>
+
+<div class='line'>
+	<div class='header'>{{ source }} reads Vogue</div>
+	{{ line }}
+	<p></p>
+	<div class='buttons'>
+		<a href='/vogued' class='back'>
+			Refresh
+		</a>
+		<a href='/' class='back'>
+			Back
+		</a>
+	</div>
+</div>
+
+<script>
+	var images = ["/static/img/lampshades.png", "/static/img/pinkrocks.png", "/static/img/jacquemus_no_caption.png" ]
+	
+	function pickImage() {
+		var imageChoice = Math.floor(Math.random() * images.length);
+		return document.body.style.backgroundImage = 'url(' + images[imageChoice] + ')'
+	}
+
+	pickImage();
+</script>
+
+{% endblock %}

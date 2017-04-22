@@ -1,0 +1,40 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3378543, 2017-04-22T16:54:15-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: DidotLT-Roman by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/didot/linotype-didot-roman/
+ * 
+ * Webfont: DidotLT-Italic by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/didot/linotype-didot-italic/
+ * 
+ * Webfont: DidotLT-Bold by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/didot/linotype-didot-bold/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3378543
+ * Licensed pageviews: 250,000
+ * Webfonts copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1992, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Library GmbH, and may no
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/338d6f");
+
+  
+@font-face {font-family: 'DidotLT-Roman';src: url('webfonts/338D6F_0_0.eot');src: url('webfonts/338D6F_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/338D6F_0_0.woff2') format('woff2'),url('webfonts/338D6F_0_0.woff') format('woff'),url('webfonts/338D6F_0_0.ttf') format('truetype'),url('webfonts/338D6F_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'DidotLT-Italic';src: url('webfonts/338D6F_1_0.eot');src: url('webfonts/338D6F_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/338D6F_1_0.woff2') format('woff2'),url('webfonts/338D6F_1_0.woff') format('woff'),url('webfonts/338D6F_1_0.ttf') format('truetype'),url('webfonts/338D6F_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'DidotLT-Bold';src: url('webfonts/338D6F_2_0.eot');src: url('webfonts/338D6F_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/338D6F_2_0.woff2') format('woff2'),url('webfonts/338D6F_2_0.woff') format('woff'),url('webfonts/338D6F_2_0.ttf') format('truetype'),url('webfonts/338D6F_2_0.svg#wf') format('svg');}
+ 

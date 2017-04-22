@@ -1,0 +1,83 @@
+[2017-04-04 13:33:32,556: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-04-04 13:33:32,566: INFO/MainProcess] mingle: searching for neighbors
+[2017-04-04 13:33:33,618: INFO/MainProcess] mingle: all alone
+[2017-04-04 13:33:33,631: INFO/MainProcess] w1@Blythes-MacBook-Pro-2.local ready.
+[2017-04-04 13:46:41,597: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-04-04 13:46:41,608: INFO/MainProcess] mingle: searching for neighbors
+[2017-04-04 13:46:42,634: INFO/MainProcess] mingle: all alone
+[2017-04-04 13:46:42,651: INFO/MainProcess] w1@Blythes-MacBook-Pro-2.local ready.
+[2017-04-04 14:07:36,916: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/Library/Python/2.7/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/Library/Python/2.7/site-packages/celery/worker/consumer/consumer.py", line 594, in start
+    c.loop(*c.loop_args())
+  File "/Library/Python/2.7/site-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/Library/Python/2.7/site-packages/kombu/async/hub.py", line 345, in create_loop
+    cb(*cbargs)
+  File "/Library/Python/2.7/site-packages/kombu/transport/redis.py", line 1039, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/Library/Python/2.7/site-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/Library/Python/2.7/site-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/Library/Python/2.7/site-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/Library/Python/2.7/site-packages/redis/client.py", line 2183, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/Library/Python/2.7/site-packages/redis/client.py", line 2172, in _execute
+    connection.connect()
+  File "/Library/Python/2.7/site-packages/redis/connection.py", line 442, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+[2017-04-04 14:07:36,957: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 61 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds...
+
+[2017-04-04 14:07:38,969: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-04-04 14:07:38,980: INFO/MainProcess] mingle: searching for neighbors
+[2017-04-04 14:07:39,990: INFO/MainProcess] mingle: all alone
+[2017-04-08 20:33:37,740: INFO/MainProcess] sync with celery@Blythes-MacBook-Pro-2.local
+[2017-04-08 20:48:25,081: INFO/MainProcess] sync with celery@Blythes-MacBook-Pro-2.local
+[2017-04-09 09:25:12,564: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-09 10:55:55,028: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-09 15:45:48,859: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-09 19:31:36,623: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-09 23:17:19,790: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-10 10:02:20,646: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-10 17:08:04,291: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-11 08:31:53,412: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-12 01:30:10,011: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-12 04:32:24,009: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-12 07:34:39,010: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-12 08:28:49,453: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-12 19:00:07,126: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-13 00:31:12,014: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-13 08:59:35,140: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-13 13:34:19,939: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-13 13:35:45,033: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-13 19:42:40,499: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-14 07:55:12,203: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-14 15:36:22,040: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-14 15:55:19,861: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-15 11:26:44,256: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-15 17:17:53,886: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-16 12:05:21,727: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-16 14:36:39,534: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-16 16:45:11,810: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-16 16:50:40,008: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-17 08:05:27,939: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-18 07:41:52,806: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-18 21:37:48,611: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-19 08:23:48,357: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-19 11:07:55,546: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-20 10:28:02,262: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-20 18:14:59,101: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-20 20:26:46,089: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-21 09:02:34,209: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-21 16:23:47,507: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-21 21:38:20,522: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-22 11:21:19,422: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
+[2017-04-22 12:39:41,036: INFO/MainProcess] missed heartbeat from celery@Blythes-MacBook-Pro-2.local
